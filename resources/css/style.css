@@ -1,0 +1,353 @@
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+        
+}
+html{
+    
+    background-color: #fff;
+    color: #504f4f;
+    font-family: 'Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    
+}
+.box{
+    padding: 1%;
+}
+section{
+    padding: 80px 0;  
+}
+header{
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.53),rgba(0, 0, 0, 0.53)),url('images/hero.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
+    
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width:500px;
+    margin: 0 auto;
+}
+.hero-text-box{
+    position: absolute;
+    width;1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+      
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.btn:hover,
+.btn:active{
+     background-color: aquamarine;
+}
+.btn:link,
+.btn:visited{
+  display: inline-block;
+  padding: 10 px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s,border 0.2s,color 0.2s; 
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border:1px solid #e67e22;
+    
+    
+}
+.btn-ghost{
+    border: 1px solid;
+    color: #e67e22;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+.logo{
+    height: 100px;width: auto; float:left;margin-top: 20px;
+}
+.main-nav{
+    float:right;
+    life-style:none;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.main-nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+     border-bottom:2px solid  transparent;
+    transition: border-bottom 0.2 s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid  #e67e22;
+       
+}
+.row{
+    text-align: center;
+    
+}
+.col span-1-of-4{
+  text-align: center;
+    margin-left: 20px;
+}
+.meals-showcase {
+	list-style: none;
+	width: 100%; /* Will fill 100% of browser, not of the 1140px, no row class*/
+
+}
+
+.meals-showcase li {
+	display: block;
+     float: left;
+	width: 25%; /* 4 images per row/ ul element */
+
+}
+
+.meal-photo {
+	//*****width: 100%; /* redundant line, only bottom code needed...try removing after add transitions */
+	overflow: hidden; /* Keeps images contained */
+	background-color: #000; /* for darker img */
+}
+
+.meal-photo img {
+	opacity: 0.7; /* can you use linear gradient instead? try this with header too. */
+	width: 100%;
+	height: auto;
+	-webkit-transform: scale(1.16);
+	        transform: scale(1.16); /* 116% bigger i think... */
+	transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1); /* back to normal*/
+	opacity: 1; /* back to normal*/
+}
+
+.meals { padding: 0; }
+.steps{
+    margin-top: 30px;
+    
+}
+.steps-box:first-child{
+    text-align:right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen{
+    width:40%;
+}
+.works-steps{
+    margin-bottom: 50px; 
+}
+.works-steps:last-of-type{ /* Gives step 3 more margin bottom unlike sibling elements with 50px */
+	margin-bottom: 80px;
+}
+.works-steps div{
+    color:#e67e22;
+    border:2px solid #e67e22;
+    display: inline-block;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    text-align: center;
+    padding: 5px;
+	float: left; /* We used clearfix on meals section to fix issue of clearing floats */
+	font-size: 1.5em;
+	margin-right: 25px;
+}
+.btn-app:link,
+.btn-app:visited { border: 0; }
+
+.btn-app img {
+	height: 50px;
+	width: auto;
+	margin-right: 15px;
+}
+.testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed; /* Parallax effect bitches */
+}
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 1.5;
+	position: relative;
+	margin-top: 30px;
+}
+cite {
+	font-size: 0.9em;
+	font-style: normal;
+	font-weight: 300;
+	margin-top: 25px;
+	display: block;
+}
+
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.section-form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+input[placeholder],
+input[type="submit"], /* had to repeat this style for some reason, works now */
+textarea[placeholder],
+select
+{
+	font-family: inherit;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+textarea { height: 100px; }
+
+input[type="checkbox"] { margin: 10px 5px 10px 0; }
+
+.map-box {
+	width: 100%;
+	height: 530px;
+	position: relative;
+}
+
+
+.map {
+	width: 100%;
+	height: 530px;
+	position: relative;
+	z-index: 0;
+}
+
+.form-box {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 2;
+	height: 530px;
+	padding: 40px 20px 0 30px;
+}
+
+.form-box h2 {
+	font-size: 1.6em;
+}
+* Sign Up section
+   ===========================================*/
+.plans { background-color: #f4f4f4; }
+
+.plan-box{
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%; 
+	box-shadow: 0 2px 2px #e3e3e3; /* xVal, yVal, blur, color */
+}
+
+.plan-box div {
+	padding: 15px;
+	border-bottom: 1px solid #efefef;
+}
+
+.plan-price {
+	font-size: 3em;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #e67e22;
+	/*box-shadow: 0 2px 2px #e3e3e3;*/
+}
+
+.plan-price span {
+	font-size: 1rem; /* root font weight */
+	font-weight: 300;
+}
+
+.plan-price .plan-meal { font-size: 0.8em; }
+
+.planbox div:first-child {
+	background-color: #fcfcfc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+	text-align: center;
+	border-bottom: none;
+}
+
+.plan-box ul { list-style: none; }
+
+.plan-box ul li { padding: 5px 0; }
